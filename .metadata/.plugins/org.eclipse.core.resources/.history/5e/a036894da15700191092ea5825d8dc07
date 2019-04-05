@@ -1,0 +1,14 @@
+
+public class TvTest2 {
+	String color;
+	boolean power;
+	int channel;
+	
+	void power() { power = !power; }
+	void channelUp() { channel++; }
+	void channelDown() { channel--; }
+}
+
+public class TvTest2{
+	public static void main
+}
