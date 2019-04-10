@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class NumeralSystem {
+
+	public static void main(String[] args) {
+		int n, m, y, k;
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("n을 입력하시오 : ");
+		n = scanner.nextInt();
+		int a = 16 - n;
+		System.out.println("x를 입력하시오 : ");
+		String x = scanner.nextLine();
+		int b = Integer.parseInt(x);
+		b = b-a;
+		
+		System.out.println(x);
+		/*if(n != 10) {
+			while(x < n) {
+				
+			}
+		}*/
+	}
+
+}

@@ -1,0 +1,14 @@
+
+public class Numeral {
+
+	public static void main(String[] args) {
+		int m, y, k;
+		int n = 12;
+		int x = 10;
+		int a = x%10*n;
+		int b = x/10;
+		System.out.println(a);
+
+	}
+
+}

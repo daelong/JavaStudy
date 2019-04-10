@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Numeral {
+
+	public static void main(String[] args) {
+		int n = 9;
+		int x = 142;
+		int y = x%n;
+		System.out.println(y);
+		x = x/n;
+		y = x%n;
+		System.out.println(x);
+		
+	}
+
+}

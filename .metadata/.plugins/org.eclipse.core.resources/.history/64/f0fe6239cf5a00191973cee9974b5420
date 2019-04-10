@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Numeral {
+
+	public static void main(String[] args) {
+		int n = 9;
+		int x = 142;
+		int y = x%n;
+		/*System.out.println(y);
+		x = x/n;
+		y = x%n;
+		x = x/n;
+		System.out.println(y);
+		System.out.println(x);
+		x = x*100;
+		*/
+		while(x>n) {
+			int i = 1;
+			y = x/n; //15
+			x = x%n; //7
+			x = x*i; //7
+			i *= 10;
+			x = y;
+			System.out.println(x);
+		}
+	}
+
+}

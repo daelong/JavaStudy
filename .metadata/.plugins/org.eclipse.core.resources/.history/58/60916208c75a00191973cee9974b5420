@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Numeral {
+
+	public static void main(String[] args) {
+		int n, m, x, y, k;
+		System.out.println("n을 입력하시오 : ");
+		n = scanner.nextInt();
+		System.out.println("x를 입력하시오 : ");
+		x = scanner.nextInt(n);
+		System.out.println(x);
+
+	}
+
+}
