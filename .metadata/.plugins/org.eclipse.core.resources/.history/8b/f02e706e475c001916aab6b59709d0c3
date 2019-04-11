@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class test {
+
+	public static void main(String[] args) {
+		int result = 15;
+		int n = 16;
+		int k = 15;
+		System.out.printf("%x", result);
+		if( k == 15 ) {
+			result = result + 1;
+			System.out.printf("%x", result);
+		}
+			
+
+	}
+
+}

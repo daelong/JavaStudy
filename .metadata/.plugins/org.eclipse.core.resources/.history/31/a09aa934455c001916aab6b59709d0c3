@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class test {
+
+	public static void main(String[] args) {
+		int result = 11;
+		int n = 11;
+		char doe = (char)result;
+		System.out.println("%n",11);
+		
+
+	}
+
+}

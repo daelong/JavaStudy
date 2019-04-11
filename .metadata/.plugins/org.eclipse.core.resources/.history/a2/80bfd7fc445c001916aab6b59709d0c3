@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class test {
+
+	public static void main(String[] args) {
+		int result = 11;
+		char do = (char)result;
+		System.out.println(0xdo);
+		
+
+	}
+
+}

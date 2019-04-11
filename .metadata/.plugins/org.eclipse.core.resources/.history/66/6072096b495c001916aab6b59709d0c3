@@ -1,0 +1,60 @@
+import java.util.*;
+
+public class Numeral {
+
+	public static void main(String[] args) {
+		int n = 16;
+		int x = 15;
+		int y = 0;
+		int i = 1;
+		int result = 0;
+		int add = 0;
+		/*System.out.println(y);
+		x = x/n;
+		y = x%n;
+		x = x/n;
+		System.out.println(y);
+		System.out.println(x);
+		x = x*100;
+		*/
+		if( n>1 && n<11) {
+			while(x>=n) {
+				y = x/n; // 142/9=15
+				x = x%n; //142%9=7
+				x = x*i; //7*1
+				i = i*10;// i = 10
+				System.out.println(x);
+				result += x; //result = 7, 67
+				x = y; //몫을 다시한번 n으로 나누어주어야하니 x에 y값 대입
+			}
+			y = y*i;//최종 몫*i = 100
+			System.out.println(y);
+			result = result + y; //100*67
+			System.out.println(result);
+		}
+		else if( n>10 && n<17) {
+			if(x>=n) {
+				while(x>=n) {
+					y = x/n; // 142/9=15
+					x = x%n; //142%9=7
+					x = x*i; //7*1
+					i = i*10;// i = 10
+					System.out.println(x);
+					result += x; //result = 7, 67
+					x = y; //몫을 다시한번 n으로 나누어주어야하니 x에 y값 대입
+				}
+				y = y*i;//최종 몫*i = 100
+				System.out.println(y);
+				result = result + y; //100*67
+				System.out.println(result);
+			}
+			else if(x<n) {
+				result = x;
+				add = result/n;
+				result = result + add;
+				System.out.printf("%x", result);
+			}
+		}
+	}
+
+}

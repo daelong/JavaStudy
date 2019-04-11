@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class test {
+
+	public static void main(String[] args) {
+		int result = 154;
+		int n = 16;
+		int k = 14;
+		System.out.printf("%x", result);
+		if( k == 14 ) {
+			int add = result/k;
+			result = result + add;
+			System.out.printf("%x", result);
+		}
+			
+
+	}
+
+}

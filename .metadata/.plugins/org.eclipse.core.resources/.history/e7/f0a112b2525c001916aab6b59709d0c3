@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class test {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int result = 154;
+		int n = 16;
+		int k = 14;
+		String character = "0123456789abcdef";
+		
+		while(k>=result) {
+			
+		}
+		char cha = character.charAt(k);
+		System.out.println(cha);
+		System.out.println(character.substring(k));
+	}
+
+}
+
+
+

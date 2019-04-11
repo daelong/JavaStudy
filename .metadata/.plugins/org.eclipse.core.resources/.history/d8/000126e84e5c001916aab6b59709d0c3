@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class test {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int result = 154;
+		int n = 16;
+		int k = 14;
+		int sky = Integer.parseInt(scanner.readLine());
+		String character = "0123456789abcdef";
+		System.out.print();
+		
+		System.out.printf("%x", result);
+		if( k == 14 ) {
+			int add = result/k;
+			result = result + add;
+			System.out.printf("%x", result);
+		}
+			
+
+	}
+
+}
+
+
+
