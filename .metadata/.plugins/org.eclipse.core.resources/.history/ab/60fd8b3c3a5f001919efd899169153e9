@@ -47,5 +47,8 @@ public class NumeralSystem {
 		for(int i = j; i >= 0 ; i--) {
 			System.out.print(cha2[i]);
 		}
+		int sum1=1000;
+		String result=Integer.toString(sum1, 8);
+		System.out.println(result);
 	}
 }

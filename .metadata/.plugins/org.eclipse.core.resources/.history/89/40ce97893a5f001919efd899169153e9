@@ -5,6 +5,12 @@ public class test {
 	public static void main(String[] args) {
 		
 		int n, x, m, y, k;
+		int remainder = 0; //나머지
+		int sum = 0; //x+y
+		int quotient = 0; // 몫
+		char [] cha = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};// 숫자 지정
+		int j = 0; //배열 증가를 위한 수
+		
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("n을 입력하시오 : ");
@@ -18,8 +24,9 @@ public class test {
 		System.out.println("k를 입력하시오 : ");
 		k = scanner.nextInt();
 		
-		String result=Integer.toString(x+y, k);
-		System.out.println("x + y : " + result);
+		sum = x+y;
+		String result=Integer.toString(sum, k);
+		System.out.println(result);
 		
 		
 	}

@@ -47,5 +47,6 @@ public class NumeralSystem {
 		for(int i = j; i >= 0 ; i--) {
 			System.out.print(cha2[i]);
 		}
+		
 	}
 }

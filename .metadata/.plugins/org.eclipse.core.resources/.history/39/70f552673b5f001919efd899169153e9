@@ -19,7 +19,7 @@ public class test {
 		k = scanner.nextInt();
 		
 		String result=Integer.toString(x+y, k);
-		System.out.println("x + y : " + result);
+		System.out.println(result);
 		
 		
 	}

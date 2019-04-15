@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class NumeralSystem {
+public class test {
 
 	public static void main(String[] args) {
 		
@@ -47,5 +47,6 @@ public class NumeralSystem {
 		for(int i = j; i >= 0 ; i--) {
 			System.out.print(cha2[i]);
 		}
+		
 	}
 }
