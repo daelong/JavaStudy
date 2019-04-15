@@ -1,0 +1,19 @@
+import java.util.*;
+
+class DiceGame() {
+	
+	private int diceFace;
+	private int userGuess;
+	
+	private void
+	
+}
+
+public class DiceGameTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
