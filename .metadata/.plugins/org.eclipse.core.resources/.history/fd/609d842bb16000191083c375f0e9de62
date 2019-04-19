@@ -1,0 +1,35 @@
+import java.util.*;
+
+class Charac{
+	String userInput;
+	
+	public void cha(String a) {
+		//for(int i = a.length(); i >=0; i--)
+		System.out.print(a.charAt(3));
+		//System.out.println();
+	}
+	
+	public String getUserInput(String prompt) {
+		System.out.println(prompt);
+		Scanner s = new Scanner(System.in);
+		return s.next();
+		
+	}
+	
+	public void StartCharac() {
+		userInput = getUserInput("문자를 입력하세요 : ");
+		cha(userInput);
+		
+	}
+}
+
+public class Problem5 {
+
+	public static void main(String[] args) {
+		Charac ch = new Charac();
+		ch.StartCharac();
+		
+		
+	}
+
+}

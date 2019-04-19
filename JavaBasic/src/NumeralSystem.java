@@ -25,7 +25,7 @@ public class NumeralSystem {
 		k = scanner.nextInt();
 		
 		char [] cha1 = new char [k]; // k진수 만들기
-		char [] cha2 = new char [k]; // 출력할 숫자만들기
+		char [] cha2 = new char [1000000]; // 출력할 숫자만들기
 		for(int i = 0; i<k; i++ ) {
 			cha1[i] = cha[i]; //k진수의 숫자 만들기
 		}
