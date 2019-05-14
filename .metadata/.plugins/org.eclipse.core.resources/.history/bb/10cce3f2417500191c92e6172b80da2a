@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+class Sigma{
+	String in;
+	public String getIn() {
+		return in;
+	}
+	public void setIn(String in) {
+		this.in = in;
+	}
+}
+public class SigmaTest {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("정수를 입력하세요 : ");
+		String n = scanner.next();
+//		Sigma[] sigma = new Sigma(n);
+
+	}
+
+}

@@ -1,7 +1,10 @@
+import java.util.Scanner;
+
 class Employee{
-	private String name;
-	private String phoneNumber;
-	private int salary;
+	String name;
+	String address;
+	int salary;
+	String phone;
 	
 	public String getName() {
 		return name;
@@ -9,11 +12,11 @@ class Employee{
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getPhoneNumber() {
-		return phoneNumber;
+	public String getAddress() {
+		return address;
 	}
-	public void setPhoneNumber(String phoneNumber) {
-		this.phoneNumber = phoneNumber;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 	public int getSalary() {
 		return salary;
@@ -21,20 +24,31 @@ class Employee{
 	public void setSalary(int salary) {
 		this.salary = salary;
 	}
-	public void print() {
-		System.out.println("이름 : " + name);
-		System.out.println("번호 : " + phoneNumber);
-		System.out.println("급여 : " + salary);	
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 }
 public class EmployeeTest {
 
 	public static void main(String[] args) {
-		Employee e1 = new Employee();
-		e1.setName("이대현");
-		e1.setPhoneNumber("01098181825");
-		e1.setSalary(7500);
-		e1.print();
+		Scanner scanner = new Scanner(System.in);
+		
+		Employee[] employees = new Employee[3];
+		for(int i = 0; i < employees.length; i++)
+			employees[i] = new Employee();
+		for(int i = 0; i < employees.length; i++) {
+			System.out.println("이름 : ");
+			employees[i].name = scanner.next();
+			System.out.println("주소 : ");
+			employees[i].address = scanner.next();
+		}
+		for(int i = 0; i < employees.length; i++) {
+			System.out.println("이름 : " + employees[i].name);
+			System.out.println("주소 : " + employees[i].address);
+		}
 	}
 
 }

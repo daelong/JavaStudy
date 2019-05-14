@@ -1,0 +1,21 @@
+
+public class BigIntegerTest {
+
+	public static void main(String[] args) {
+		String a = "29";
+		String b = "29";
+		String result = "";
+		for(int i = 2; i > 0 ; i--) {
+			if(Integer.parseInt(a.substring(i-1,i)) + Integer.parseInt(b.substring(i-1,i)) > 10) {
+				result += Integer.parseInt(a.substring(i-1, i))+Integer.parseInt(b.substring(i-1, i)) - 10;
+				result += Integer.parseInt(a.substring(i-2,i-1)) + Integer.parseInt(b.substring(i-2,i-1))+1;
+			}
+			else
+				//result += Integer.parseInt(a.substring(i-1,i)) + Integer.parseInt(b.substring(i-1,i));
+		//	result += Integer.parseInt(a.substring(0,i));
+			
+		}
+		System.out.println(a.substring(1,2));
+		System.out.println(result);
+	}
+}
