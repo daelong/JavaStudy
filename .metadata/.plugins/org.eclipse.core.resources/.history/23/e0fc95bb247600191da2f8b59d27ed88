@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class Sigma{
+	private int[] num;
+	private int i = 0;
+	public void addSigma(int[] num) {
+		for(int value: num) {
+			value++;
+		}
+		
+	}
+}
+public class SigmaTest {
+
+	public static void main(String[] args) {
+		int[] num = new int[5];
+		for(int value: num) {
+			value++;
+		}
+		System.out.println(value);
+	}
+
+}

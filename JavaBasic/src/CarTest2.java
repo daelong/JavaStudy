@@ -1,4 +1,4 @@
-class Care{
+class Car{
 	private int speed;
 	
 	public void setSpeed(int s) {
@@ -16,7 +16,7 @@ public class CarTest2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		short s = 10; //short는 정수보다 작음
-		Care myCar = new Care();
+		Car myCar = new Car();
 		myCar.setSpeed(s); //이거하면 형변환을 해줘서 인트로 바꿔줌 
 		myCar.setSpeed(100);
 		myCar.setSpeed(79.2f); //이건 double보다 정확하지 않으니 double로 형변환을 해줘서 출력하게됨
