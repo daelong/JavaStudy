@@ -1,0 +1,68 @@
+
+public class NewTest implements Comparable<Object> {
+	
+	private boolean signum; 
+	
+	public BigInteger(){}
+	public BigInteger(long value){}
+	public BigInteger(BigInteger value){}
+	public BigInteger(String value){}
+	
+	public String toString(){
+		
+	}
+	public boolean equals(Object obj){
+		
+		
+	}
+	public int compareTo(BigInteger value) {
+		
+	}
+	
+	public int compareTo(Object o) {
+		
+	}
+	
+	public double doubleValue(){
+		
+	}
+	public double floatValue(){
+
+	}
+	public double intValue(){
+		
+	}
+	public double longValue(){
+		
+	}
+	
+	
+	public int getMagnitudeLength(){
+		
+	}
+	
+	public BigInteger add(BigInteger value){
+		
+	}
+	public BigInteger add(int value){
+		
+	}
+
+public static void main (String[] args){
+		BigInteger c1 = new BigInteger(1234);
+		System.out.println("c1 = " + c1);
+
+		BigInteger c2 = new BigInteger(c1);
+		System.out.println("c2 = " + c2);
+
+		BigInteger c3 = new BigInteger("-456");
+		System.out.println("c3 = " + c3);
+		
+		System.out.println("c1 == c2: " + c1.equals(c2));
+		System.out.println("c1 == c3: " + c1.equals(c3));
+		System.out.println("c1 ? c3: " + c1.compareTo(c3));
+		
+		c2 = c2.add(100).add(c1);
+		System.out.println("c2 = " + c2);
+ }
+}

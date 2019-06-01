@@ -1,25 +1,44 @@
-abstract class Shape{
-	int x, y;
-	public void move(int x, int y) {
-		this.x = x;
-		this.y = y;
+class Shape{
+	public int x, y;
+	public void draw() {
+		System.out.println("Shape Draw");
 	}
-	public abstract void draw();
-};
+}
 
 class Rectangle extends Shape{
-	int width, height;
-	public void draw() { //추상메소드 구현
-		System.out.println("사각형 그리기 메소드");
+	public int width, height;
+	public void draw() {
+		System.out.println("Rectangle Draw");
 	}
-};
+}
 
-public class ShapeTest {
+class Triangle extends Shape{
+	private int base, height;
+	public void draw() {
+		System.out.println("Triangle Draw");
+	}
+}
 
+class Circle1 extends Shape{
+	private int radius;
+	public void draw() {
+		System.out.println("Circle Draw");
+	}
+}
+
+public class ShapeTest{
+//	private static Shape arrayOfShape[];
 	public static void main(String[] args) {
-		Rectangle rec = new Rectangle();
-		rec.draw();
-
+		Shape s;
+		Rectangle r = new Rectangle(); //rec객체 
+		s = r;
+		s.draw();
+		System.out.println(r.width);
+		f(s);
 	}
-
+	public static void f(Shape s) {
+		Rectangle r2;
+		r2 = (Rectangle)s;
+		System.out.println(r2.width);
+	}
 }
