@@ -26,7 +26,7 @@ class Circle1 extends Shape{
 	}
 }
 
-public class ShapeTest{
+class ShapeTest{
 //	private static Shape arrayOfShape[];
 	public static void main(String[] args) {
 		Shape s;
@@ -38,6 +38,7 @@ public class ShapeTest{
 	}
 	public static void f(Shape s) {
 		Rectangle r2;
+		//r2 = s 이렇게 하면 에러남 형변환을 해줘야함
 		r2 = (Rectangle)s;
 		System.out.println(r2.width);
 	}

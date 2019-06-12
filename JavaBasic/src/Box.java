@@ -1,4 +1,4 @@
-public interface Comparable1{
+public interface Comparable{
 	int compareTo(Object other);
 }
 public class Box implements Comparable1{

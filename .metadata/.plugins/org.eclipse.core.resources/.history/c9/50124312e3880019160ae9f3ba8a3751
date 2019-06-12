@@ -1,0 +1,19 @@
+import java.io.*; 
+public class CheckedExceptionDemo {
+
+	public static void main(String[] args) {
+		try {
+		BufferedReader bReader = new BufferedReader(new FileReader("out.txt"));
+		String input = bReader.readLine();
+		System.out.println(input);
+		}
+		catch(FileNotFoundException e) {
+			System.err.println("FileNotFoundException!");
+		}
+		catch(IOException e) {
+			System.err.println("IOException!");
+		}
+
+	}
+
+}
