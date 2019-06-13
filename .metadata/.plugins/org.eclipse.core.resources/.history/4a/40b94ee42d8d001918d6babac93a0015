@@ -1,0 +1,18 @@
+interface Controllable{
+	void play();
+	void stop();
+}
+
+class VideoPlayerTest implements Controllable{
+	
+	public static void main(String[] args) {
+		Controllable a = new Controllable() {
+			public void play() {
+				System.out.println("play");
+			}
+			public void stop() {
+				System.out.println("stop");
+			}
+		};
+	}				
+}

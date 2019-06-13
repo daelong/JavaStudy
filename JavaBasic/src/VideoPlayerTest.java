@@ -4,50 +4,22 @@ interface Controllable{
 }
 
 class VideoPlayer implements Controllable{
-	public void play() {
-		System.out.println("play");
-	}
-	public void stop() {
-		System.out.println("stop");
-	}
+	public void play() {};
+	public void stop() {};
 }
 
-class VideoPlayerTest {
+class VideoPlayerTest{
 	
-
 	public static void main(String[] args) {
-		VideoPlayer a = new VideoPlayer() {
+		Controllable a = new VideoPlayer() {
 			public void play() {
-				System.out.println("play!!!!!");
+				System.out.println("play");
 			}
 			public void stop() {
-				System.out.println("stop!!!!!");
+				System.out.println("stop");
 			}
 		};
 		a.play();
 		a.stop();
-		
-//		Controllable videoPlayer = new Controllable() {
-//			public void play() {
-//				System.out.println("play");
-//			}
-//			public void stop() {
-//				System.out.println("stop");
-//			}
-//		};
-//		videoPlayer.play();
-//		videoPlayer.stop();
-		
-//		private class VideoPlayer implements Controllable{
-//			public void play() {
-//				System.out.println("play");
-//			}
-//			public void stop() {
-//				System.out.println("stop");
-//			}
-//		}
-		
-		
-	}
-
+	}				
 }

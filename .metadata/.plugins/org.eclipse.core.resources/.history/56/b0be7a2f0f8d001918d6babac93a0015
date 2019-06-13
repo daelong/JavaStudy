@@ -1,0 +1,25 @@
+class A{
+	void autoPlay(I i) {
+		i.play();
+	}
+}
+
+interface I{
+	public abstract void play();
+}
+
+class B implements I{
+	public void Play() {
+		System.out.println("play in B class");
+	}
+}
+
+
+class InterfaceTest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
