@@ -1,0 +1,28 @@
+import java.util.*;
+class HexaToBinTest {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("16진수 문자열을 입력하세요 : ");
+		String hexa = scanner.next();
+		int a = 10;
+		int b = 11;
+		int c = 12;
+		int d = 13;
+		int e = 14;
+		int f = 15;
+		String[] hexa2bin = {"0000", "0001", "0010", "0011", 
+							 "0100", "0101", "0110", "0111",
+							 "1000", "1001", "1010", "1011",
+							 "1100", "1101", "1110", "1111"};
+//		for(int i = 0; i < hexa.length(); i++) {
+//			System.out.print(hexa2bin[hexa.charAt(i)] + " ");
+//		}
+		System.out.println(hexa.charAt(0));
+		System.out.println(hexa.charAt(1));
+		System.out.println(hexa.charAt(2));
+		System.out.println(hexa.charAt(3));
+		
+	}
+
+}

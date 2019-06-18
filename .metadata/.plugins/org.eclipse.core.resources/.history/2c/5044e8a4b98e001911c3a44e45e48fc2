@@ -1,0 +1,16 @@
+
+abstract class MyComparable{
+	public abstract int comparTo();
+}
+
+class Rectangle implements MyComparable{
+	
+}
+public class RemoteControlTest {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

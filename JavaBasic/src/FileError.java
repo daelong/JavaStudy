@@ -6,7 +6,7 @@ class FileError {
 	
 	public FileError() {
 		list = new int[SIZE];
-		for(int i = 0; i < SIZE; i++)
+		for(int i = 0; i < SIZE; i++) 
 			list[i] = i;
 		writeList();
 	}
@@ -18,11 +18,11 @@ class FileError {
 			for(int i = 0; i < SIZE; i++)
 				out.println("배열원소 " + i + " = " + list[i]);
 		}
-		catch(ArrayIndexOutOfBoundsException e) {
+		catch(ArrayIndexOutOfBoundsException e	) {
 			System.err.println("ArrayINdexOutOfBoundsException : ");
 		}
 		catch(IOException e) {
-			System.err.println("IOException");
+			System.err.println("IOException : ");
 		}
 		finally {
 			if(out != null)
@@ -32,7 +32,6 @@ class FileError {
 
 	public static void main(String[] args) {
 		new FileError();
-
 	}
 
 }

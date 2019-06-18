@@ -1,0 +1,33 @@
+interface RemoteControl{
+	public void turnOn();
+	public void turnOff();
+}
+
+class Television implements RemoteControl{
+	public void turnOn() {
+		System.out.println("전원이 켜졌습니다.");
+	}
+	public void turnOff() {
+		System.out.println("전원이 꺼졌습니다.");
+	}
+	public void turn() {
+		System.out.println("turn");
+	}
+}
+public class RemoteControlTest {
+
+	public static void main(String[] args) {
+		Television b = new Television();
+		b.turnOn();
+		b.turn();
+		RemoteControl a = new Television(); //이건 RemoteControl에 있는 메소드만 구현가능함
+		a.turnOn();
+		Television c;
+		c = (Television)a;
+		c.turn();
+		if(c instanceof Television)
+			System.out.println("HI");
+
+	}
+
+}

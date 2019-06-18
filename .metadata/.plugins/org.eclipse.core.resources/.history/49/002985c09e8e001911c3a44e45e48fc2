@@ -1,0 +1,19 @@
+import java.util.*;
+
+class reverse{
+	public reverse(String a) {
+		for(int i = a.length(); i > 0; i--) {
+			System.out.println(a.charAt(i));
+		}
+	}
+}
+class reverseString {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String a = scanner.next();
+		new reverse(a);
+
+	}
+
+}

@@ -1,0 +1,28 @@
+class NotFoundException extends Exception{
+	public NotFoundException() {
+		super("원하는 숫자가 배열안에 없습니다.");
+	}
+}
+class Test6 {
+
+	public static void main(String[] args) {
+		int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		try{
+			searchArray(array, 11);
+		}
+		catch(NotFoundException e) {
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+	public static void searchArray(int[] a, int b) throws NotFoundException{
+		for(int value : a) {
+			if( value == b)
+				System.out.println("찾는 숫자는 " + value + "입니다.");
+			else
+				throw new NotFoundException();
+			
+		}
+	}
+}

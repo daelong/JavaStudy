@@ -1,0 +1,22 @@
+class NotFoundException extends Exception{
+	public NotFoundException() {
+		super("원하는 숫자가 배열안에 없습니다.");
+	}
+}
+class Test6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static int searchArray(int[] a, int b) throws NotFoundException{
+		for(int value : a) {
+			if( value == b)
+				return value;
+			else
+				throw NotFoundException();
+			
+		}
+	}
+}
